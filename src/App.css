@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+.slogo h1:hover{
+  color: rgb(107, 182, 15);
+  cursor: pointer;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +40,369 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* header */
+
+.fluid-container{
+  height: 60vh;
+  background-image: url("https://www.fohlio.com/hubfs/image-20220615-170335.png");
+  background-size:cover;
+  background-position: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.headerback{
+  background-color: rgba(0,0,0,0.5);
+  height: 60vh;
+  
+}
+.logo{
+ width: 130px;
+ height: 50px;
+}
+.nav{
+  display:flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.nav-link{
+  display: flex;
+  color: white;
+  font-size: 17px;
+  justify-content: space-evenly ;
+  cursor: pointer;
+}
+.nav-link>li{
+  padding:5px;
+  margin-left: 15px;
+}
+.nav-link>li:hover{
+  color: chartreuse;
+}
+.merge{
+  display: flex;
+  justify-content: space-between  ;
+  width: 50%;
+
+}
+.bt1{
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+    font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+.bt2{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(115, 187, 43);
+  color: white !important;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;  
+}
+.loginn{
+  padding: 10px;
+}
+.slogo{
+  color: white !important;
+  margin-top: 50px;
+  font-size: 23px;
+  padding: 10px;
+}
+/* .cart, */
+.register{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 6px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 17px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: greenyellow;
+}
+/* slogo */
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 5px;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropalign{
+  margin-left: 20px
+}
+
+@media screen and (max-width:960px) {
+  .logo{
+      display:flex ;  
+      position: absolute;
+      top: 15px;
+      left: 35px; 
+  }
+  .nav-links{
+      display: none;
+  }
+  .nav-links-mobile{
+      position: absolute;
+      display: block;
+      list-style: none;
+      background-color: black;
+      left: 0;
+      top: 60px;
+      transition: all 0.5s ease-out;
+      width: 100%;   
+  }
+  .login{
+      display: none; 
+  }
+  .heading{
+    color: white !important;
+    font-size:medium;
+    margin-top: 70px;
+  }
+  .img{
+    display: none;
+
+  }
+  .nav-link{
+    display: none;
+  }
+}
+/* header */
+.heading{
+  color: white !important;
+  font-size: x-large;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+/* product */
+.productitem{
+  margin-top: 30px;
+  color: black !important;
+  
+}
+.active{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  padding-right:10px ;
+
+}
+.active a{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.item{
+  color: black !important;
+  font-weight: bold;
+}
+.item:hover{
+  color: red !important;
+}
+.nav-link{
+  padding: 10px;
+  list-style: none;
+}
+.website{
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+/* website */
+.img{
+  width: 35px;
+  height: 25px;
+  padding-left: 10px;
+}
+
+/* footer */
+
+.footer{
+  color: #5b5d59;
+  display: flex;
+}
+.foo1{
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.fooimg{
+  width: 50px;
+  height:50px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.sociall{
+  display: flex;
+  text-align: left;
+  font-size: 19px;
+
+}
+.sociall p{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.social-link{
+  text-align: left;
+  margin: 20px 0 20px 0;
+}
+.foo2{
+  
+  display: flex;
+  font-weight: bold;
+  width: 50%;
+  padding:0 5%;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.foo21{
+  width: 50%;
+}
+.foo22  {
+  width: 50%;
+}
+.footerend{
+  padding: 2%;
+  color: #5b5d59;
+
+}
+.add:hover{
+  color: green;
+  cursor: pointer;
+}
+/* .dataa{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  overflow: hidden; 
+  margin-bottom: 3%;
+}
+.dataaa{
+  width: 33.33%;
+  margin: 0px;
+  
+
+}
+.dataaa a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.imgg{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ */
+
+/* card */
+.card{
+ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cardbody{
+  width: 33.33%;
+  padding: 3%;
+}
+.imgg{
+  width: 100%;
+  height: 80%;
+  height: auto;
+
+  margin-bottom: 2%;
+}
+.cardbody a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.underline:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width:960px) {
+  .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cardbody{
+    width: 50%;
+    padding: 3%;
+  }
+  .foo1{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .foo2{
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    padding:0 5%;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
 }
