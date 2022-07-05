@@ -1,153 +1,122 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.slogo h1:hover{
-  color: rgb(107, 182, 15);
-  cursor: pointer;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* header */
-
-.fluid-container{
-  height: 60vh;
-  background-image: url("https://www.fohlio.com/hubfs/image-20220615-170335.png");
-  background-size:cover;
-  background-position: center;
-}
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  text-decoration: none;
+  list-style: none;  
 }
 
-.headerback{
-  background-color: rgba(0,0,0,0.5);
+/* header */
+nav{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+label.logo{
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;  
+  font-weight: bold;
+}
+nav ul{
+  margin-right: 20px;
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: capitalize;
+}
+nav ul li a:hover{
+  color:rgb(15, 202, 15)
+}
+.sign{
+  color: black;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.checkbtn {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  float: right;
+  cursor: pointer;
+  line-height: 80px;
+  display: none;
+}
+#check{
+  display: none;
+}
+.log{
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.logg{
+  width: 130px;
+  height: 45px;
+  margin-top: 15px;
+}
+.sig{
+  padding: 10px;
+  margin-left:5px; 
+  background-color: rgb(117, 185, 49);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.head{
   height: 60vh;
-  
+  background-image: url("https://www.fohlio.com/hubfs/image-20220615-170335.png");
+  background-size: cover;
+  background-position: center;
 }
-.logo{
- width: 130px;
- height: 50px;
+.hi{
+  height: 60vh;
+  background-color: rgba(0,0,0,0.5);
 }
 .nav{
-  display:flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-.nav-link{
-  display: flex;
-  color: white;
-  font-size: 17px;
-  justify-content: space-evenly ;
-  cursor: pointer;
-}
-.nav-link>li{
-  padding:5px;
-  margin-left: 15px;
-}
-.nav-link>li:hover{
-  color: chartreuse;
-}
-.merge{
-  display: flex;
-  justify-content: space-between  ;
-  width: 50%;
-
-}
-.bt1{
-  padding: 10px;
-  border-radius: 5px;
-  margin-right: 10px;
-    font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-
-}
-.bt2{
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(115, 187, 43);
-  color: white !important;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;  
-}
-.loginn{
-  padding: 10px;
-}
-.slogo{
-  color: white !important;
-  margin-top: 50px;
-  font-size: 23px;
-  padding: 10px;
-}
-/* .cart, */
-.register{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 5px 5px;
-  margin: 0 10px;
-  cursor: pointer;
+  overflow: hidden;
 }
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
+.dropbtn:hover{
+  cursor: pointer;
+  color:rgb(15, 202, 15) !important
+}
+.nav .dropbtn{
+  margin-top: 20px;
+}
+.dropalign{
+  margin-left: 30px;
+}
+span{
+  font-weight: bold;
+}
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: white;
-  padding: 6px 16px;
+  padding: 29px 16px;
   background-color: inherit;
   font-family: inherit;
-  font-size: 17px;
-}
-.navbar a:hover, .dropdown:hover .dropbtn {
-  color: greenyellow;
-}
-/* slogo */
-
-
+  margin: 0;
+} 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -155,12 +124,10 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 5px;
 }
 
-
 .dropdown-content a {
-  float: none;
+  float: none; 
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -175,88 +142,256 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropalign{
-  margin-left: 20px
+
+/* .fluid-container {
+  height: 60vh;
+  background-image: url("https://www.fohlio.com/hubfs/image-20220615-170335.png");
+  background-size: cover;
+  background-position: center;
+} */
+/* 
+.headerback {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60vh;
+
+} */
+/* 
+.logo {
+  width: 130px;
+  height: 50px;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.nav-link {
+  display: flex;
+  color: white;
+  font-size: 17px;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.nav-link>li {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.nav-link>li:hover {
+  color: chartreuse;
+}
+
+.merge {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+} */
+
+.bt1 {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.bt2 {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(115, 187, 43);
+  color: white !important;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.loginn {
+  padding: 10px;
+}
+
+.slogo {
+  color: white;
+  margin-top: 50px;
+  font-size: 23px;
+  padding-left: 20px;  
+  padding-right: 20px;  
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.slogo:hover{
+  color: rgb(35, 191, 35);
+  cursor: pointer;
+}
+
+/* navbar dropdown */
+/* .dropdown {
+  float: left;
+  overflow: hidden;
+} */
+
 
 @media screen and (max-width:960px) {
-  .logo{
-      display:flex ;  
-      position: absolute;
-      top: 15px;
-      left: 35px; 
+  .logo {
+    display: flex;
+    position: absolute;
+    left: 25px;
   }
-  .nav-links{
-      display: none;
-  }
-  .nav-links-mobile{
-      position: absolute;
-      display: block;
-      list-style: none;
-      background-color: black;
-      left: 0;
-      top: 60px;
-      transition: all 0.5s ease-out;
-      width: 100%;   
-  }
-  .login{
-      display: none; 
-  }
-  .heading{
-    color: white !important;
-    font-size:medium;
-    margin-top: 70px;
-  }
-  .img{
-    display: none;
+  
 
-  }
-  .nav-link{
+  /* .nav-link {
     display: none;
   }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: black;
+    left: 0;
+    top: 60px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+
+  } */
+/* 
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+
+  } */
+
+  /* .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+  } */
+
+  /* header */
+
+  nav ul li a{
+    font-size: 20px; 
+    color: white;
+  }
+  .checkbtn{
+    display: block;
+    margin-left: 10px;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1c5e53;
+    top: 80px;
+    left:-100%;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a:hover{
+    color: greenyellow;
+  }
+  .login {
+    display: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .slogo {
+    color: white;
+    margin-top: 50px;
+    font-size: 15px;
+    padding-left: 20px;  
+    padding-right: 20px;  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .slogo:hover{
+    color: rgb(35, 191, 35);
+    cursor: pointer;
+  }
+  
+  /* .heading {
+    color: white !important;
+    font-size: medium;
+    margin-top: 70px;
+  } */
+
+  
+
+  /* .nav-link {
+    display: none;
+  } */
 }
+
 /* header */
-.heading{
+/* .heading {
   color: white !important;
   font-size: x-large;
   margin-top: 70px;
   padding: 20px;
-}
+} */
 
 /* product */
-.productitem{
+.productitem {
   margin-top: 30px;
   color: black !important;
-  
+
 }
-.active{
+
+.active {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   margin-left: 80px;
   margin-bottom: 20px;
-  padding-right:10px ;
+  padding-right: 10px;
 
 }
-.active a{
+
+.active a {
   float: left;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
 }
-.item{
+
+.item {
   color: black !important;
   font-weight: bold;
 }
-.item:hover{
+
+.item:hover {
   color: red !important;
 }
-.nav-link{
+
+/* .nav-link {
   padding: 10px;
   list-style: none;
-}
-.website{
+} */
+
+.website {
   display: flex;
   justify-content: end;
   padding: 10px;
@@ -264,7 +399,7 @@
 }
 
 /* website */
-.img{
+.img {
   width: 35px;
   height: 25px;
   padding-left: 10px;
@@ -272,59 +407,70 @@
 
 /* footer */
 
-.footer{
+.footer {
   color: #5b5d59;
   display: flex;
 }
-.foo1{
+
+.foo1 {
   width: 50%;
   padding-left: 5%;
   padding-right: 5%;
 }
-.fooimg{
+
+.fooimg {
   width: 50px;
-  height:50px;
+  height: 50px;
   display: flex;
   margin-bottom: 10px;
 }
-.sociall{
+
+.sociall {
   display: flex;
   text-align: left;
   font-size: 19px;
 
 }
-.sociall p{
+
+.sociall p {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.social-link{
+
+.social-link {
   text-align: left;
   margin: 20px 0 20px 0;
 }
-.foo2{
-  
+
+.foo2 {
+
   display: flex;
   font-weight: bold;
   width: 50%;
-  padding:0 5%;
+  padding: 0 5%;
   text-align: start;
   margin-bottom: 40px;
 }
-.foo21{
+
+.foo21 {
   width: 50%;
 }
-.foo22  {
+
+.foo22 {
   width: 50%;
 }
-.footerend{
+
+.footerend {
   padding: 2%;
   color: #5b5d59;
-
+  text-align: center;
 }
-.add:hover{
+
+.add:hover {
   color: green;
   cursor: pointer;
 }
+
 /* .dataa{
   display: flex;
   flex-direction: row;
@@ -355,53 +501,77 @@
  */
 
 /* card */
-.card{
- 
+.card {
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.cardbody{
+
+.cardbody {
   width: 33.33%;
   padding: 3%;
 }
-.imgg{
+
+.imgg {
   width: 100%;
   height: 80%;
   height: auto;
   margin-bottom: 2%;
 }
-.cardbody a{
+
+.cardbody a {
   color: black;
   font-weight: bold;
   text-decoration: none;
   font-size: 17px;
 }
-.underline:hover{
+
+.underline:hover {
   text-decoration: underline;
 }
+
 @media screen and (max-width:960px) {
-  .card{
+  .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .cardbody{
+
+  .cardbody {
     width: 50%;
     padding: 3%;
   }
-  .foo1{
+
+  .foo1 {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .foo2{
+
+  .foo2 {
     display: flex;
     font-weight: bold;
     width: 100%;
-    padding:0 5%;
+    padding: 0 5%;
     text-align: start;
     margin-bottom: 40px;
   }
+  .navv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .navv a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .dropdown-content{
+      text-align: center;
+      padding: 20px;
+  }
 }
+
+
